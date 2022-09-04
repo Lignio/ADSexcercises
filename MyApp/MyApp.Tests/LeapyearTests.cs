@@ -9,13 +9,13 @@ public class LeapYearTests
     public void isThisALeapYear()
     {
         // Arrange
-        var year = new Leapyear();
+        var test = new Leapyear();
 
         // Act
-        var result = year.isLeapYear(1684);
-        var result1 = year.isLeapYear(1600);
-        var result2 = year.isLeapYear(1587);
-        var result3 = year.isLeapYear(1500);
+        var result = test.isLeapYear(1684);
+        var result1 = test.isLeapYear(1600);
+        var result2 = test.isLeapYear(1587);
+        var result3 = test.isLeapYear(1500);
 
         // Assert
         result.Should().Be(true);
