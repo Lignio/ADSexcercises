@@ -14,15 +14,22 @@ public class UnitTest1
         var result1 = Program.isLeapYear(1600);
         var result2 = Program.isLeapYear(1587);
         var result3 = Program.isLeapYear(1500);
+        var result4 = Program.parseUserInput("1200");
+        var result5 = Program.parseUserInput("text");
+       
+
 
     
 
         //Assert
-        //var output = writer.GetStringBuilder().ToString().TrimEnd();
-        //output.Should().Be("Want to know if a specific year is a leapyear or not?");
         result.Should().Be(true);
         result1.Should().Be(true);
         result2.Should().Be(false);
         result3.Should().Be(false);
+        result4.Should().Be(true);
+        result5.Should().Be(false);
+
+        
+        
     }
 }
